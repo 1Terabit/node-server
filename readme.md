@@ -1,27 +1,27 @@
-# Descripción de la Aplicación
+# Application Description
 
-Esta aplicación es un servidor web construido con Express.js. Está diseñado para proporcionar una API con varias rutas, middleware para la autenticación y el registro de solicitudes, y documentación de la API generada automáticamente a través de Swagger.
+This application is a web server built with Express.js. It is designed to provide an API with various routes, middleware for authentication and request logging, and API documentation automatically generated through Swagger.
 
-## Características Principales
+## Main Features
 
-- **Express.js**: Utiliza Express para manejar las solicitudes HTTP de manera eficiente y con una estructura clara.
-- **Documentación de API con Swagger**: Integra Swagger para generar y servir una interfaz de usuario de documentación de la API, accesible en `/api-docs`. Esto facilita la comprensión y el uso de la API por parte de los desarrolladores.
-- **Middleware Personalizado**: Implementa middleware para funciones específicas como el registro de solicitudes (`logger`) y la autenticación (`auth`).
-- **Rutas Definidas**: Define rutas específicas para diferentes funcionalidades a través de módulos importados como `greetingApi` y `userRoutes`, organizando la lógica de la aplicación de manera modular.
+- **Express.js**: Uses Express to handle HTTP requests efficiently and with a clear structure.
+- **API Documentation with Swagger**: Integrates Swagger to generate and serve an API documentation user interface, accessible at `/api-docs`. This makes it easier for developers to understand and use the API.
+- **Custom Middleware**: Implements middleware for specific functions such as request logging (`logger`) and authentication (`auth`).
+- **Defined Routes**: Defines specific routes for different functionalities through imported modules like `greetingApi` and `userRoutes`, organizing the application logic in a modular way.
 
-## Inicio Rápido
+## How to Run the Project
 
-Para iniciar el servidor:
+To start the server:
 
-1. Asegúrate de tener Node.js instalado en tu sistema.
-2. Clona este repositorio y navega al directorio del proyecto.
-3. Instala las dependencias con `npm install`.
-4. Inicia el servidor con `npm start` o directamente ejecutando `node server.js`.
-5. Accede a la documentación de la API visitando `http://localhost:3000/api-docs` en tu navegador.
+1. Make sure you have Node.js installed on your system.
+2. Clone this repository and navigate to the project directory.
+3. Install the dependencies with `npm install`.
+4. Start the server with `npm start` or directly by running `node server.js`.
+5. Access the API documentation by visiting `http://localhost:3000/api-docs` in your browser.
 
-## Estructura del Código
+## Code Structure
 
-- `app.js`: Archivo principal que configura el servidor, middleware, rutas, y la documentación de Swagger.
-- `src/routes`: Directorio que contiene los archivos de definición de rutas para diferentes partes de la API.
-- `src/middleware`: Contiene middleware personalizado como el logger y la autenticación.
-- `auth`: Módulo que maneja la autenticación de usuarios.
+- `app.js`: Main file that configures the server, middleware, routes, and Swagger documentation.
+- `src/routes`: Directory that contains the route definition files for different parts of the API.
+- `src/middleware`: Contains custom middleware like the logger and authentication.
+- `auth`: Module that handles user authentication.
